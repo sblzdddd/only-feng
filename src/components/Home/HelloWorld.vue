@@ -139,8 +139,8 @@ onMounted(() => {
 }
 .title h1 {
   @apply z-[10] pb-1 md:pb-[15px]
-  text-[10vw] sm:text-7xl md:text-8xl lg:text-9xl
-  font-bold tracking-normal md:tracking-wider;
+  text-[7vw] sm:text-5xl md:text-6xl lg:text-7xl
+  font-bold tracking-normal md:tracking-wider text-center;
   background: linear-gradient(to right, #ffc74d, #a4ff5a);
   text-shadow: 0 3px 15px #ffffff3a;
   color: rgb(255, 255, 255);
@@ -151,7 +151,7 @@ onMounted(() => {
 }
 .title h2 {
   @apply z-[10]
-  text-[4vw] sm:text-[1.5rem] md:text-2xl lg:text-3xl
+  text-[7vw] sm:text-[1.6rem] md:text-xl lg:text-2xl
   font-bold;
   text-shadow: 0 3px 15px #ffffff3a;
   color: #ffffffc0;
