@@ -8,7 +8,7 @@ import components from '@/data/components'
 </script>
 
 <template>
-  <div class="w-full min-h-full pt-14 page-paddings">
+  <div class="w-full min-h-full pt-14 page-paddings bg-black/50">
     <h1>About</h1>
   </div>
 </template>

@@ -63,8 +63,6 @@ const handleScroll = () => {
   if(headerRef.value) {
     var bounding = headerRef.value.getBoundingClientRect();
 
-    console.log(bounding.bottom)
-
     if (bounding.bottom > 60 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 100) {
       components.navbarTransparent = true;
     } else {

@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import Image from '@/components/UI/Image.vue'
 import components from '@/data/components'
 
