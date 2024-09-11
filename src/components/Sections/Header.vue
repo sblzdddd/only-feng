@@ -87,7 +87,7 @@ header.header-container {
 }
 
 .title-container {
-  @apply bg-black/30 w-full h-full flex flex-col items-center justify-center;
+  @apply bg-black/50 w-full h-full flex flex-col items-center justify-center;
 }
 
 .cover {
