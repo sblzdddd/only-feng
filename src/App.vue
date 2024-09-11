@@ -4,7 +4,8 @@
     <div class="drawer-content w-screen h-full overflow-x-hidden overflow-y-auto" ref="scroll">
       <!-- Page content here -->
       <NavBar />
-      <Header v-if="!(GetPage($route.name)?.noHeader)" ref="headerRef" :cover="GetPage($route.name)?.cover"
+      <Header v-if="!(GetPage($route.name)?.noHeader)" ref="headerRef"
+              :cover="GetPage($route.name)?.cover"
               :title="GetPage($route.name)?.displayName" :subTitle="<string>route.name" />
       <router-view />
     </div>

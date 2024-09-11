@@ -33,7 +33,7 @@ const route = useRoute()
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn btn-ghost btn-circle" target="_blank">
+      <a class="btn btn-ghost btn-circle" target="_blank" href="https://github.com/sblzdddd/only-feng">
         <i class="fa-brands fa-github-alt text-xl"></i>
       </a>
     </div>

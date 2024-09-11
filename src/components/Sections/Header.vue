@@ -1,7 +1,7 @@
 <template>
   <header class="header-container" ref="headerRef">
     <div class="cover" ref="coverRef">
-      <Image :src="cover" ref="headerImg" class="img-head" alt="Header Background"></Image>
+      <Image :src="cover!" ref="headerImg" class="img-head" alt="Header Background"></Image>
       <div class="title-container darken" ref="titleRef">
         <h1 class="title_" style="opacity: 1!important;">{{ title }}</h1>
         <p class="subtitle">{{ subTitle }}</p>
@@ -26,7 +26,6 @@ const props = defineProps({
     type: [String]
   },
   cover: {
-    required: true,
     type: [String]
   },
   subTitle: {
