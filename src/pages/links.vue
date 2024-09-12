@@ -8,7 +8,7 @@ function OpenLink(link:string) {
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row flex-wrap page-paddings mt-10 gap-10">
+  <div class="flex flex-col lg:grid lg:grid-cols-2 flex-wrap px-5 lg:px-20 xl:px-52 my-10 gap-3 lg:gap-10">
     <div class="card-base grow" @click="OpenLink('https://slc.sulphurdxd.online')">
       <div class="card-icon">
         <Image src="/slc.png" class="h-full" alt="slc" />
@@ -25,6 +25,15 @@ function OpenLink(link:string) {
       <div class="card-ti">
         <h1>合成 SulphurDXD</h1>
         <p>垃圾游戏</p>
+      </div>
+    </div>
+    <div class="card-base grow" @click="OpenLink('https://pgor.sulphurdxd.online')">
+      <div class="card-icon">
+        <Image src="/SulphurDXD_Avatar.png" class="h-full" alt="slc" />
+      </div>
+      <div class="card-ti">
+        <h1>PagaOnRhyme</h1>
+        <p>寄翁对韵在线版，，，</p>
       </div>
     </div>
   </div>
