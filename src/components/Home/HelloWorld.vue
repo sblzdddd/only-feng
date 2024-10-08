@@ -3,9 +3,9 @@
     <div class="title" ref="titleRef">
       <h1 @mouseenter="hoverChanged('hover')"
           @mouseleave="hoverChanged('unhover')">
-        SDXDの活全家网站
+        502打胶网
       </h1>
-      <p class="subtitle">当你开始怀疑的时候，说明你还不够抽象</p>
+      <p class="subtitle">{{ currentDian }}</p>
     </div>
   </div>
   <div class="absolute bottom-0 left-0 right-0 flex p-2 justify-end items-center z-[-1]">
@@ -19,9 +19,11 @@ import { gsap } from 'gsap'
 import components from '@/data/components'
 import { ChevronDoubleDownIcon } from "@heroicons/vue/24/outline";
 import { setting } from '@/data/setting'
+import { dian } from '@/data/global'
 
 const emit = defineEmits(['hover', 'unhover'])
 const titleRef = ref();
+const currentDian = ref<string>("当你开始怀疑的时候，说明你还不够抽象")
 
 let hoverControl = true
 let animationPlayed = false;
@@ -116,9 +118,15 @@ watch(() => components.loadingEnd, (val) => {
     }, 250);
   }
 })
+function getRandomItem<T>(list: T[]): T | undefined {
+  if (list.length === 0) return undefined; // Return undefined if the list is empty
+  const randomIndex = Math.floor(Math.random() * list.length);
+  return list[randomIndex];
+}
 onMounted(() => {
   const scroll = components.scroll
   scroll?.addEventListener("scroll", handleScroll);
+  if(currentDian.value) currentDian.value = `"${getRandomItem(dian)}"`
 })
 </script>
 <style>
