@@ -3,7 +3,7 @@
     <div class="title" ref="titleRef">
       <h1 @mouseenter="hoverChanged('hover')"
           @mouseleave="hoverChanged('unhover')">
-        502打胶网
+        语文世界第一の打胶网
       </h1>
       <p class="subtitle">{{ currentDian }}</p>
     </div>
@@ -17,7 +17,6 @@
 import { onMounted, ref, watch } from 'vue'
 import { gsap } from 'gsap'
 import components from '@/data/components'
-import { ChevronDoubleDownIcon } from "@heroicons/vue/24/outline";
 import { setting } from '@/data/setting'
 import { dian } from '@/data/global'
 
